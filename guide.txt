@@ -1,0 +1,19 @@
+npm init -y
+    - set up backend
+
+npm i express ejs express-ejs-layouts
+    - download dependencies
+
+npm i --save-dev nodemon
+    - download development dependencies (auto restart server after change)
+
+"start": "node server.js"
+    - in package.json (start server on production without nodemon)
+
+"devStart": "nodemon server.js"
+    - auto refresh server after change
+
+npm i mongoose
+    - install mongo
+
+npm i --save-dev dotenv
