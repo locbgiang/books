@@ -17,3 +17,6 @@ npm i mongoose
     - install mongo
 
 npm i --save-dev dotenv
+
+npm i body-parser
+    - install body parser library

@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== 'production'){
 const express = require("express") // import express
 const app = express()               // get the app portion from express
 const expressLayouts = require('express-ejs-layouts')   // get the express layout package
+const bodyParser = require('body-parser')
 
 const indexRouter = require('./routes/index')       // connects index.js
 const authorRouter = require('./routes/authors')
@@ -15,6 +16,7 @@ app.set('views', __dirname + '/views')   // set where our views are coming from,
 app.set('layout', 'layouts/layout') // every file is going to be put into this layout file
 app.use(expressLayouts)
 app.use(express.static('public'))
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 
 const mongoose = require('mongoose')    // import mongoose
 mongoose.connect(process.env.DATABASE_URL)  // connect database url, use .env or 
