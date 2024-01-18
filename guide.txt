@@ -20,3 +20,8 @@ npm i --save-dev dotenv
 
 npm i body-parser
     - install body parser library
+
+npm i multer
+    - allows us to work with multi part form
+
+    
