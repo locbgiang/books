@@ -24,4 +24,5 @@ npm i body-parser
 npm i multer
     - allows us to work with multi part form
 
-    
+npm i method-override
+    - put and delete request
